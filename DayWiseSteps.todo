@@ -1,0 +1,21 @@
+ ✔ Add the spring web mvc framework to the project. @done (16-12-06 14:09)
+ ✔ Change the JRE version to latest version. @done (16-12-06 14:09)
+ ✔ In the webapp->WEB-INF->web.xml change the version to point to the latest version of servlet @done (16-12-06 14:17)
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+     http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+</web-app>
+
+ ✔ Modify the project to solve the errors. @done (16-12-06 14:23)
+ ✔ In the src folder we have main directory in that create a java directory @done (16-12-06 14:24)
+ ✔ Create another directory in the WEB-INF folder and name it as 
+ views @done (16-12-06 14:27)
+ ✔ Create another directory to store static resources such as css, js web libraries, images etc @done (16-12-06 14:29)
+ ✔ Create a separate package for controller. For providing package name use the convention of groupId.artifactid.XXX @done (16-12-06 14:33)
+ ✔ Code in web.xml to speicfy the FrontController that will accept all the request first. @done (16-12-06 14:43)
+ ✔ Code the PageController @done (16-12-06 15:23)
+ ✔ Add the spring bean configuration file. @done (16-12-06 15:23)
+

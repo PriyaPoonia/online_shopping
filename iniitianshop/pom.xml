@@ -7,6 +7,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>iniitianshop Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<!-- All the commonly used framework versions -->
+	<properties>
+		<spring.version>4.3.4.RELEASE</spring.version>
+	</properties>
+
+
+
 	<dependencies>
 		<!-- Linking backend with front-end -->
 		<dependency>
@@ -14,7 +21,7 @@
 			<artifactId>ecomm-backend</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -30,9 +37,32 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- Spring WebMvc Framework -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+
+
 
 	</dependencies>
 	<build>
 		<finalName>iniitianshop</finalName>
+		<!-- For changing the JRE version to latest one -->
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+
+
 	</build>
 </project>
